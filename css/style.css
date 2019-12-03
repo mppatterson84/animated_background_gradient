@@ -2,9 +2,38 @@ html,
 body{
     background-color: lightskyblue;
 }
+h3{
+    text-align: center;
+}
 main section{
     height: 100vh;
 }
 main section:nth-of-type(1){
-    background-color: lightgreen;
+    background: linear-gradient(45deg, lightgreen, lightblue, lightgreen);
+    background-size: 400% 400%;
+    -webkit-animation: bgGradientAnimation 5s ease infinite;
+    animation: bgGradientAnimation 5s ease infinite;
+}
+
+@-webkit-keyframes bgGradientAnimation {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+@keyframes bgGradientAnimation {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
 }
