@@ -11,8 +11,8 @@ main section{
 main section:nth-of-type(1){
     background: linear-gradient(45deg, lightgreen, lightblue, lightgreen);
     background-size: 400% 400%;
-    -webkit-animation: bgGradientAnimation 5s ease infinite;
-    animation: bgGradientAnimation 5s ease infinite;
+    -webkit-animation: bgGradientAnimation 10s ease infinite;
+    animation: bgGradientAnimation 10s ease infinite;
 }
 
 @-webkit-keyframes bgGradientAnimation {
